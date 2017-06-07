@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.natodriod.customview.shapescustomview.MainActivity">
+
+  <com.natodriod.customview.shapescustomview.customview.ShapeDraw
+      android:layout_width="match_parent"
+      android:layout_height="350dp"
+      android:id="@+id/shape_draw"
+      app:square_color="@color/colorAccent"
+      app:square_size="150dp"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true" />
+
+  <Button
+      android:id="@+id/bSwap_color"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/shape_draw"
+      android:text="Swap Color"/>
+
+</RelativeLayout>
